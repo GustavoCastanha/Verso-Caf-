@@ -2,48 +2,27 @@
 <!doctype html>
   <html lang="pt-br">
      <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <!-- Bootstrap icones -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <title>Hello, world!</title>
+        <title>Verso & Café</title>
      </head>
  
   <body>
-
-   <!--Cabeçalho-->
-   <!-- mt-2: margem superior pequena -->
    <header class="mt-2">
-      <!-- navbar: barra de navegação
-           navbar-expand-md: menu expansível a partir de telas médias (>=768px)
-           bg-body-tertiary: cor de fundo padrão leve
-           py-3: padding vertical (espaçamento interno) -->
       <nav class="navbar navbar-expand-md bg-body-tertiary py-3">
-         <!-- container-fluid: ocupa 100% da largura da tela
-              pb-4: padding inferior -->
          <div class="container-fluid pb-4">
             <a class="navbar-brand" href="#">Verso & Café</a>
-             <!-- navbar-toggler: botão que aparece em telas pequenas
-                 data-bs-toggle / data-bs-target: controlam a abertura/fechamento do menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- collapse navbar-collapse: torna o menu recolhível em telas pequenas -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-               <!-- navbar-nav: container dos links de navegação
-                    me-auto: empurra os itens para a esquerda -->
-                 
                <div class="navbar-nav me-auto">
-               <!-- nav-link: define o estilo dos links da barra de navegação 
-               href='#servicos'direciona a página para o elemento com ID igual a servicos 
-               -->   
                <a class="nav-link active" aria-current="page" href="#">Início</a>
                <a class="nav-link" href="#servicos">Nossos serviços</a>
+               <a class="nav-link" href="#produtos">Nossos produtos</a>
                <a class="nav-link" href="#contato">Contato</a>
                </div>
             </div>
@@ -51,18 +30,13 @@
       </nav>
    </header>
 
-   <!--Carousel-->
-   <!-- carousel: componente de carrossel
-        slide: adiciona efeito de transição
-        data-bs-ride="carousel": ativa a rotação automática -->
-   <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="carousel">
-      <!-- carousel-indicators: botões de navegação (bolinhas) -->
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-       <!-- carousel-inner: container que agrupa os slides -->
+ 
       <div class="carousel-inner">
          <div class="carousel-item active">
             <img src="./imagens/banner01.png" class="d-block w-100" alt="Imagem de café">
@@ -96,7 +70,6 @@
       </button>
    </div>
 
-    <!--Cards Nossos serviços-->
    <h2 id="servicos" class="text-center mt-4 py-3">Nossos Serviços</h2>
 
    <div class="container row mx-auto gap-4">
@@ -123,17 +96,128 @@
       </div>
    </div>
 
+   <h2 id="produtos" class="text-center mt-4 py-3">Nossos Produtos</h2>
 
-   <!--Rodapé contato-->
+   <div class="container">
+      <div class="row justify-content-center gap-4">
+
+         <div class="col-12 col-md-5 col-lg-3 text-center" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalCafeTradicional">
+            <img src="./imagens/produtos1.png" class="img-fluid" alt="Imagem de Cafés Tradicionais" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Cafés Tradicionais</h5>
+         </div>
+         <div class="col-12 col-md-5 col-lg-3 text-center" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalCafeEspecial">
+            <img src="./imagens/produtos2.png" class="img-fluid" alt="Imagem de Cafés Especiais" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Cafés Especiais</h5>
+         </div>
+         <div class="col-12 col-md-5 col-lg-3 text-center">
+            <img src="./imagens/produtos3.png" class="img-fluid" alt="Imagem de Sucos e Vitaminas" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Sucos e Vitaminas</h5>
+         </div>
+         <div class="col-12 col-md-5 col-lg-3 text-center">
+            <img src="./imagens/produtos4.png" class="img-fluid" alt="Imagem de Doces" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Doces</h5>
+         </div>
+         <div class="col-12 col-md-5 col-lg-3 text-center">
+            <img src="./imagens/produtos5.png" class="img-fluid" alt="Imagem de Pães" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Pães</h5>
+         </div>
+         <div class="col-12 col-md-5 col-lg-3 text-center">
+            <img src="./imagens/produtos6.png" class="img-fluid" alt="Imagem de Salgados" style="max-width: 250px;">
+            <h5 class="mt-3 fw-bold">Salgados</h5>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="modalCafeTradicional" tabindex="-1" aria-labelledby="modalCafeTradicionalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="modalCafeTradicionalLabel">Café Tradicional</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+               <img src="./imagens/produtos1.png" class="img-fluid mb-3" alt="Café Tradicional">
+               <p>Nosso café tradicional é conhecido por seus blends tradicionais e saborosos que agradam aos amantes da bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="modalCafeEspecial" tabindex="-1" aria-labelledby="modalCafeEspecialLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="modalCafeEspecialLabel">Café Especial</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+               <img src="./imagens/produtos2.png" class="img-fluid mb-3" alt="Café Especial">
+               <p>Nossos cafés tradicionais representam o sabor clássico que atravessa gerações. Produzidos com grãos de alta qualidade, oferecem um aroma envolvente e um gosto marcante, perfeito para começar o dia ou acompanhar bons momentos.</p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <section class="py-4 container">
+      <div class="p-3">
+         <h3 class="fw-bold p-3">Entre em Contato</h3>
+         <form id="contato">
+
+            <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="idNomeContato" placeholder="Nome" for="idNomeContato">
+               <label for="idNomeContato">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+               <input type="email" class="form-control" id="idEmailContato" placeholder="Email" for="idEmailContato">
+               <label for="idEmailContato">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="idTelefoneContato" placeholder="Telefone" for="idTelefoneContato">
+               <label for="idTelefoneContato">Telefone</label>
+            </div>
+
+            <div class="form-floating mb-3">
+               <select class="form-select" id="idPreferenciaContato" for="idPreferenciaContato">
+                  <option selected id="idPreferenciaContato">Preferência de contato:</option>
+                  <option value="1">Whatsapp</option>
+                  <option value="2">Email</option>
+                  <option value="3">Ligação</option>
+               </select>
+               <label for="idPreferenciaContato">Preferência de contato:</label>
+            </div>
+
+            <div class="mb-3">
+               <label for="idSatisfacaoContato" class="form-label">Pesquisa de Satisfação</label>
+               <input type="range" class="form-range" min="0" max="10" id="idSatisfacaoContato" for="idSatisfacaoContato">
+            </div>
+
+            <div class="form-check mb-3">
+               <input class="form-check-input" type="checkbox" id="idReceberNovidades" for="idReceberNovidades">
+               <label class="form-check-label" for="idReceberNovidades">
+                  Deseja receber novidades por e-mail?
+               </label>
+            </div>
+         
+            <button type="button" id="btnEnviar" class="btn btn-secondary w-100 mt-3 py-3 fw-bold">Enviar</button>
+         </form>
+      </div>
+   </section>
+
    <footer id="contato" class="bg-dark text-white py-3 mt-5">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
     
-         <!-- Telefone -->
          <div class="mb-2 mb-md-0">
-            </i><i class="bi bi-whatsapp" style="color:#25D366;"></i> +55 (99) 99999-9999
+            </i><i class="bi bi-whatsapp" style="color:#25D366;"></i> +55 (99) 3664-1111
          </div>
       
-         <!-- Redes sociais -->
          <div>
             <a href="https://instagram.com" class="text-white me-3" target="_blank"><i class="bi bi-instagram" style="color:#E1306C;"></i></a>
             <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="bi bi-facebook" style="color:#1877F2;"></i></a>
@@ -141,23 +225,33 @@
       </div>
    </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script>
+      const botao = document.getElementById('btnEnviar');
+
+      botao.addEventListener('click', () => {
+
+         const nome = document.getElementById('idNomeContato').value;
+         const email = document.getElementById('idEmailContato').value;
+         const telefone = document.getElementById('idTelefoneContato').value;
+         const preferencia = document.getElementById('idPreferenciaContato').value;
+         const satisfacao = document.getElementById('idSatisfacaoContato').value;
+         const receberNovidades = document.getElementById('idReceberNovidades').checked ? "Sim" : "Não";
+
+         const mensagem = 
+            `📋 Dados do Formulário:
+               ------------------------------
+               Nome: ${nome}
+               Email: ${email}
+               Telefone: ${telefone}
+               Preferência de Contato: ${preferencia}
+               Nível de Satisfação: ${satisfacao}
+               Receber Novidades: ${receberNovidades}`;
+
+         alert(mensagem);
+      });
+    </script>
   </body>
 </html>
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
 
